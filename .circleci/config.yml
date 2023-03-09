@@ -24,7 +24,7 @@ jobs:
           command: |
             docker build -t adnananis/simple-node .
           environment:
-            DOCKERHUB_PASSWORD: $DOCKER_PASSWORD
+            DOCKER_PASSWORD: $DOCKER_PASSWORD
       - run:
           name: Push Docker image to Docker Hub
           command: |
